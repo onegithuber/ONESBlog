@@ -1,0 +1,24 @@
+
+<ul class="pager">
+    {% if  posts.has_previous %}
+        <li class="previous">
+            <a href="?page={{posts.previous_page_number}}">&larr; 上一页</a>
+        </li>
+    {% else %}
+        <li class="previous disabled">
+            <a>&larr; 上一页</a>
+        </li>
+    {% endif %}
+
+    <li class="page-number">{{posts.number}}/{{paginator.num_pages}}</li>
+
+    {% if  posts.has_next%}
+        <li class="next">
+            <a href="?page={{posts.next_page_number}}">下一页 &rarr;</a>
+        </li>
+    {% else %}
+        <li class="next disabled">
+            <a>下一页 &rarr;</a>
+        </li>
+    {% endif %}
+</ul>
