@@ -6,3 +6,4 @@
 4、登录访问功能<br>
 5、markdown编辑器<br>
 6、使用grappelli美化后台<br>
+7、添加多说评论功能
