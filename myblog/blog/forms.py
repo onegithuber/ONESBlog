@@ -38,7 +38,7 @@ class ArticlePublishForm(forms.Form):
         title_zh = title
         now = datetime.datetime.now()
         content_md = cd['content']
-        content_html = markdown.markdown(cd['content'])
+        content_html = markdown.markdown(cd['content'], extensions=['markdown.extensions.extra', 'markdown.extensions.codehilite'])
         re_title = '<h\d>(.+)</h\d>'
         data = content_html.split('\n')
         for line in data:
