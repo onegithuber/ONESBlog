@@ -21,5 +21,6 @@ urlpatterns =[
     url(r'^admin/', include(admin.site.urls)),
     url(r'^index/',include('blog.urls',namespace='index')),
     url(r'^ckeditor/', include('ckeditor.urls')),
-    url(r'^accounts/login/','blog.views.loginview')
+    url(r'^accounts/login/','blog.views.loginview'),
+
 ]

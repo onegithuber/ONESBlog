@@ -7,4 +7,6 @@ urlpatterns=[
         url(r'^register/$',RegisterView.as_view(),name='register'),
         url(r'^login/$','blog.views.loginview',name='login'),
         url(r'^loginout/$','blog.views.loginoutview',name='loginoutview'),
+        url(r'^url_image/','blog.views.url_qrcode'),
+        url(r'^search/','blog.views.SearchView'),
 ]
